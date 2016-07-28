@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+% Headings command
+\titleformat{\section}{\color{headings}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{14pt}{20pt}\selectfont \raggedright\uppercase}{}{0em}{}
+
+\titleformat{\subsection}{
+\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{Nitin Karda}{ 
+\href{mailto:Nitin.Karda@asu.edu}{Nitin.Karda@asu.edu} | LinkedIn:// \href{https://www.linkedin.com/in/nitinkarda}{\custombold{nitinkarda}} | 480.819.7790 | 33rd S, 3rd S, San Jose, CA 95113
+}
+
+Software developer with 4+ years of industry experience focused on web services and web application security using Java, Python and web frameworks. Core competencies: SOA, Authentication, Databases, Cloud, TDD
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\runsubsection{Arizona State University}
+\descript{| MS - Computer Science}
+\location{Expected Dec 2016 | Tempe,AZ \textbullet{} Cum. GPA: 4.0/4.0}
+
+\runsubsection{University of Pune}
+\descript{| BE - Information Technology}
+\location{Grad. May 2011 | Pune, India \textbullet{}Cum. GPA: 3.6 / 4.0 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{SKILLS}
+\vspace{-5pt}
+\begin{minipage}[t]{.45\textwidth}
+\descript{Programming}
+Java \textbullet{}   Python \textbullet{} CPP \textbullet{} Ruby \textbullet{} GO(Beginner)\ \\
+\descript{Web Frameworks}
+Django \textbullet{} Spring MVC \textbullet{} Hibernate \textbullet{} Celery \textbullet{} .Net\
+\end{minipage}
+\begin{minipage}[t]{.5\textwidth}
+\descript{Databases}
+MySQL \textbullet{}   Oracle \textbullet{} MongoDB\ \\
+\descript{Others}
+GIT \textbullet{} Jenkins \textbullet{} RabbitMQ \textbullet{} AWS \textbullet{} SSL \textbullet{} Linux \textbullet{} SSO\ 
+\end{minipage}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Professional Experience}
+\runsubsection{Symantec Corp}
+\descript{|Software Engineering Intern(Security) }
+\location{Data Loss Prevention | May 2016 – Aug 2016 | San Francisco, CA}
+\begin{tightemize}\item Responsible for developing Authentication and Authorization services using industry standards like JWT, certificates, OAuth, two factor authentication. \item Building POC for integrating subscription based licensing model in the  product.
+\end{tightemize}
+
+\runsubsection{Symantec India Pvt Ltd}
+\descript{| Software Engineer(Security) }
+\location{Enterprise Mobility | Feb 2014 – Jul 2015 | Pune, India}
+\begin{tightemize}
+\item Implemented Restful web services using LAMP(Python) web stack, to provide MAM and MDM (Mobile Application/Device Management) capabilities\item Integrated PIV, CAC card based authentication for mobile users. Employed concepts like 2way SSL, client certificates, key chains on IOS, derived credentials.\item Developed console to offer features like one click upgrade, adding new cluster, and management of existing tenants based on location, region and scope.\end{tightemize}
+
+\runsubsection{Great Software Laboratory}
+\descript{| Software Engineer }
+\location{Cloud and Networking | Jul 2011 – Feb 2014 | Pune, India}
+\begin{tightemize}
+\item Designed UI using Flex framework (AS, MXML) for instantiation of firewalls, VMs, their policies and rules on different hypervisors.Implemented Multi-tenancy including RBAC, cloud(AWS, Azure) VM import and monitoring for Cisco PNSC\item Implemented and integrated the backend REST APIs written using LAMP(Python) web stack with Outlook APIs to schedule meetings in Blue Jeans MS Outlook Addin.\item  Developed automation framework using Ruby capable to run all types UI, API, and device automation. \end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research}
+\runsubsection{ASU FACT Lab}
+\descript{| Graduate Research Assistant}
+\location{Jan 2016 – May 2016 | Tempe, AZ | \textbf{\href{http://fact.engineering.asu.edu/}{FACT Lab}}}
+Programmed web socket based Java server to support JavaScript based front-end for an intuitive tutoring system. The aim was to enhance learning of math problems and enable productive teacher-student interaction.  Best software practices like design patterns, scalability and agile during development were employed.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Academic Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Academic Projects}
+\runsubsection{Cryptography, Key Exchange \& Certificates}
+\descript{| Spring 2016}
+\begin{tightemize}
+\item Designed symmetric key encryption algorithms with block ciphers and implemented methods to compromise them. Applied key exchange algorithm to transfer files securely between two entities. \item Utilized PKI to ensure secure communication including SSL configuration, certificate signing, certificate lifecycle, trusted roots.\end{tightemize}
+
+\runsubsection{Secure Banking System}
+\descript{| Fall 2015}
+\begin{tightemize}
+\item Designed and programmed a secure banking system which provides all basic functionality like payments, account transfers, debit and credit using Java along with spring-security and hibernate frameworks.\item
+Researched and designed security features like 2way SSL, PKI, OTP. Utilized the same in different operations of the banking system and securing the system against OWASP top ten vulnerabilities.\end{tightemize}
+\end{document}  \documentclass[]{article}
