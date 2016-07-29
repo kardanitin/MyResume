@@ -69,7 +69,7 @@
 \href{mailto:Nitin.Karda@asu.edu}{Nitin.Karda@asu.edu} | LinkedIn:// \href{https://www.linkedin.com/in/nitinkarda}{\custombold{nitinkarda}} | 480.819.7790 | 33rd S, 3rd S, San Jose, CA 95113
 }
 
-Software developer with 4+ years of industry experience focused on web services and web application security using Java, Python and web frameworks. Core competencies: SOA, Authentication, Databases, Cloud, TDD
+\location{Software developer with 4+ years of industry experience focused on web services and web application security using Java, Python and web frameworks. Core competencies: SOA, Authentication, Databases, Cloud, TDD}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
@@ -90,7 +90,7 @@ Software developer with 4+ years of industry experience focused on web services 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{SKILLS}
-\vspace{-5pt}
+\vspace{-6pt}
 \begin{minipage}[t]{.45\textwidth}
 \descript{Programming}
 Java \textbullet{}   Python \textbullet{} CPP \textbullet{} Ruby \textbullet{} GO(Beginner)\ \\
